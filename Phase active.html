@@ -100,54 +100,132 @@
 </head>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-<div>
-	<table width="20%">
-		<tr>
-			<td style="border-bottom:1px dashed #4b3124"><b>Élément</b></td>
-			<td style="border-bottom:1px dashed #4b3124"><b>Attaque</b></td>
-			<td style="border-bottom:1px dashed #4b3124"><b>Défense</b></td>
-		</tr>
-		<tr>
-			<td style="color:#fff2cc" class="strokeme">Neutre</td>
-			<td><input id="attn" type="number"></td>
-			<td><input id="defn" type="number"></td>
-		</tr>
-		<tr>
-			<td style="color:#f4cccc" class="strokeme">Feu</td>
-			<td><input id="attf" type="number"></td>
-			<td><input id="deff" type="number"></td>
-		</tr>
-		<tr>
-			<td style="color:#c9daf8" class="strokeme">Eau</td>
-			<td><input id="atte" type="number"></td>
-			<td><input id="defe" type="number"></td>
-		</tr>
-		<tr>
-			<td style="color:#f3f3f3" class="strokeme">Lumière</td>
-			<td><input id="attl" type="number"></td>
-			<td><input id="defl" type="number"></td>
-		</tr>
-		<tr>
-			<td style="color:#b7b7b7" class="strokeme">Ténèbres</td>
-			<td><input id="attt" type="number"></td>
-			<td><input id="deft" type="number"></td>
-		</tr>
-		<tr>
-			<td style="color:#d0e0e3" class="strokeme">Vent</td>
-			<td><input id="attv" type="number"></td>
-			<td><input id="defv" type="number"></td>
-		</tr>
-		<tr>
-			<td style="color:#d9ead3" class="strokeme">Temps</td>
-			<td><input id="attc" type="number"></td>
-			<td><input id="defc" type="number"></td>
-		</tr>
-		<tr><td></td></tr>
-		<tr>
-			<td style="border-top:1px dashed #4b3124">Total</td>
-			<td style="border-top:1px dashed #4b3124" colspan="2"><span id="attrés" type="number">0</span></td>
-		</tr>
-	<table>
-</div>
+<table>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124"><b>Élément</b></td>
+		<td style="border-bottom:1px dashed #4b3124"><b>Attaque</b></td>
+		<td style="border-bottom:1px dashed #4b3124"><b>Défense</b></td>
+	</tr>
+	<tr>
+		<td style="color:#fff2cc" class="strokeme">Neutre</td>
+		<td><input id="attn" type="number"></td>
+		<td><input id="defn" type="number"></td>
+	</tr>
+	<tr>
+		<td style="color:#f4cccc" class="strokeme">Feu</td>
+		<td><input id="attf" type="number"></td>
+		<td><input id="deff" type="number"></td>
+	</tr>
+	<tr>
+		<td style="color:#c9daf8" class="strokeme">Eau</td>
+		<td><input id="atte" type="number"></td>
+		<td><input id="defe" type="number"></td>
+	</tr>
+	<tr>
+		<td style="color:#f3f3f3" class="strokeme">Lumière</td>
+		<td><input id="attl" type="number"></td>
+		<td><input id="defl" type="number"></td>
+	</tr>
+	<tr>
+		<td style="color:#b7b7b7" class="strokeme">Ténèbres</td>
+		<td><input id="attt" type="number"></td>
+		<td><input id="deft" type="number"></td>
+	</tr>
+	<tr>
+		<td style="color:#d0e0e3" class="strokeme">Vent</td>
+		<td><input id="attv" type="number"></td>
+		<td><input id="defv" type="number"></td>
+	</tr>
+	<tr>
+		<td style="color:#d9ead3" class="strokeme">Temps</td>
+		<td><input id="attc" type="number"></td>
+		<td><input id="defc" type="number"></td>
+	</tr>
+	<tr><td></td></tr>
+	<tr>
+		<td style="border-top:1px dashed #4b3124">Total</td>
+		<td style="border-top:1px dashed #4b3124" colspan="2"><span id="attrés" type="number">0</span></td>
+	</tr>
+<table>
+<br/><br/>
+<table style="text-align:center">
+	<caption><b>Les combinaisons en paire(s)</b></caption>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">Nombre de N° identiques&emsp;</td>
+		<td style="border-bottom:1px dashed #4b3124">Augmentation du résultat</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">2</td>
+		<td style="border-bottom:1px dashed #4b3124">+2</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">3</td>
+		<td style="border-bottom:1px dashed #4b3124">+4</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">4</td>
+		<td style="border-bottom:1px dashed #4b3124">+8</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">5</td>
+		<td style="border-bottom:1px dashed #4b3124">+12</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">6</td>
+		<td style="border-bottom:1px dashed #4b3124">+18</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">7</td>
+		<td style="border-bottom:1px dashed #4b3124">+24</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">8</td>
+		<td style="border-bottom:1px dashed #4b3124">+32</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">9</td>
+		<td style="border-bottom:1px dashed #4b3124">+40</td>
+	</tr>
+</table>
+<br/>
+<table style="text-align:center">
+	<caption><b>Les combinaisons en suite</b></caption>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">Nombre de N° qui se suivent&emsp;</td>
+		<td style="border-bottom:1px dashed #4b3124">Augmentation du résultat</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">2</td>
+		<td style="border-bottom:1px dashed #4b3124">+3</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">3</td>
+		<td style="border-bottom:1px dashed #4b3124">+7</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">4</td>
+		<td style="border-bottom:1px dashed #4b3124">+13</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">5</td>
+		<td style="border-bottom:1px dashed #4b3124">+21</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">6</td>
+		<td style="border-bottom:1px dashed #4b3124">+31</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">7</td>
+		<td style="border-bottom:1px dashed #4b3124">+43</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">8</td>
+		<td style="border-bottom:1px dashed #4b3124">+57</td>
+	</tr>
+	<tr>
+		<td style="border-bottom:1px dashed #4b3124">9</td>
+		<td style="border-bottom:1px dashed #4b3124">+91</td>
+	</tr>
+</table>
 </body>
 </html>
